@@ -1,6 +1,6 @@
 const inquirer = require('inquirer')
-const template = require('./src/page-template')
-const writeFile = require('./src/write-file')
+const template = require('./src/page_template')
+const writeFile = require('./src/reset')
 
 
 const { Manager, managerQuestionsArr } = require('./lib/Manager');
@@ -49,14 +49,14 @@ const employeePrompt = () => {
         choices: [
             {name: 'Engineer', value: "addEngineer"},
             {name: 'Intern', value: "addIntern"},
-            {name: 'DONE', value: "done"}
+            {name: 'Exit', value: "complete"}
         ]
     }])
     .then( answer => {
       
         if (answer.employeeType === 'addEngineer') { engineerQuestions(); };
         if (answer.employeeType === 'addIntern') { internQuestions(); };
-        if (answer.employeeType === 'done') {
+        if (answer.employeeType === 'complete') {
             
             let html = template(employeesArr)
             console.log('...');
