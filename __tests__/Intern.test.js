@@ -10,7 +10,7 @@ test('Creates new Intern', () => {
 })
 
 test('Checks all methods for Interns class', () => {
-    const employee = new Intern('John Appleseed', 1111, 'johnny@appleseed.com', 'RU');
+    const employee = new Intern('Johnny Appleseed', 1111, 'johnny@appleseed.com', 'RU');
 
     expect(employee.getName()).toBe(employee.name);
     expect(employee.getId()).toBe(employee.id);

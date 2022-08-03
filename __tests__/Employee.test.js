@@ -9,7 +9,7 @@ test('Creates new employee', () => {
 })
 
 test('Checks all methods for Employee class', () => {
-    const employee = new Employee('Johnny Appleseed', 1234, 'johnny@email.com');
+    const employee = new Employee('Johnny Appleseed', 1111, 'johnny@email.com');
 
     expect(employee.getName()).toBe(employee.name);
     expect(employee.getId()).toBe(employee.id);
