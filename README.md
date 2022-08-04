@@ -25,7 +25,7 @@ The following code will be necessary to utilize this project:
 ``` npm i ```
 <a name="usage"></a>
 ## Usage 
-Demo: [Team Profile Generator]( )
+Demo: [Team Profile Generator](https://drive.google.com/file/d/1xipTHGCg4uTDRsHwJycXG-xaqojEVfhz/view)
 
 1. Clone this repo 
 2. Run `npm i` in the command line 
