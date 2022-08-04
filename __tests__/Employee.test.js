@@ -1,18 +1,34 @@
-const Employee = require('../lib/Employee');
+const Employee = require("../lib/Employee");
 
-test('Creates new employee', () => {
-    const employee = new Employee('Johnny Appleseed', 1111, 'johnny@email.com');
+("Employee instance", () => {
+    const employee = new Employee();
+    expect(typeof(employee)).toEqual("object");
+  });
 
-    expect(employee.name).toBe("Johnny Appleseed");
-    expect(employee.id).toEqual(expect.any(Number));
-    expect(employee.email).toEqual(expect.any(String));
-})
+describe("get name test", () => {
+  it("should return name", () => {
+    const employee = new Employee("Johnny Appleseed", 111, "johnny@email.com");
+    expect(employee.getName()).toEqual("Johnny Appleseed");
+  });
+});
 
-test('Checks all methods for Employee class', () => {
-    const employee = new Employee('Johnny Appleseed', 1111, 'johnny@email.com');
+describe("get ID test", () => {
+  it("should return ID", () => {
+    const employee = new Employee("Johnny Appleseed", 111, "johnny@email.com");
+    expect(employee.getId()).toEqual(111);
+  });
+});
 
-    expect(employee.getName()).toBe(employee.name);
-    expect(employee.getId()).toBe(employee.id);
-    expect(employee.getEmail()).toBe(employee.email);
-    expect(employee.getRole()).toBe('Employee');
-})
+describe("get email test", () => {
+  it("should return email", () => {
+    const employee = new Employee("Johnny Appleseed", 111, "johnny@email.com");
+    expect(employee.getEmail()).toEqual("johnny@email.com");
+  });
+});
+
+describe("get role test", () => {
+  it("should return role", () => {
+    const employee = new Employee("Johnny Appleseed", 111, "johnny@email.com");
+    expect(employee.getRole()).toEqual("Employee");
+  });
+});

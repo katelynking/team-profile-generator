@@ -25,13 +25,13 @@ The following code will be necessary to utilize this project:
 ``` npm i ```
 <a name="usage"></a>
 ## Usage 
-Demo: [Team Profile Generator](https://drive.google.com/file/d/1kgRvQx5wKxBkDy1OjRiI4Js0XnI3BJlt/view)
+Demo: [Team Profile Generator]( )
 
 1. Clone this repo 
 2. Run `npm i` in the command line 
 3. Then run `node index.js` in command line 
-4. Follow prompts until team members are all entered and then select Exit to generate the index.html file 
-5. Open index.html by right-clicking and selecting "Open in Default Browser" 
+4. Follow prompts until team members are all entered
+5. Open team.html by right-clicking and selecting "Open in Default Browser" 
 
 
 <a name="license"></a>
