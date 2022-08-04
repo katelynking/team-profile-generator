@@ -62,7 +62,7 @@ const template = (teamMembers) => {
         </li>
       </ul>
     </div>
-  </div>
+
       `;
     html.push(eCard);
   }
@@ -83,7 +83,6 @@ const template = (teamMembers) => {
       </ul>
     </div>
   </div>
-</div>
 
      `;
     html.push(iCard);
@@ -115,7 +114,7 @@ const template = (teamMembers) => {
 
 const useTemplate = (teamMembers) => {
   fs.writeFile("./dist/team.html", template(teamMembers), () => {
-    console.log("File created!");
+    console.log("team.html file created!");
   });
 };
 
